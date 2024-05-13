@@ -20,7 +20,7 @@ import mongoose from "mongoose";
 //In another approach we write an object for every specific field which gives us better clarity and more fields to understand
 
 
-const userSubTodo = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username:{
         type:String,
         unique: true,
@@ -44,4 +44,4 @@ const userSubTodo = new mongoose.Schema({
 
  
 
-export const User = mongoose.model("SubToDo", userSubTodo)
+export const User = mongoose.model("User", userSchema)
